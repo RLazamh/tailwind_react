@@ -6,16 +6,28 @@ const App = props => {
     <>
       <header id='header' 
       className="
-        h-20
+        md:h-20
         font-serif
         text-white
-        bg-black
+        bg-black 
+        xs:h-36     
       ">
+        {/*  Ejemplo de responsive
+            border-8
+            
+            md:border-red-500
+            sm:border-blue-500
+            lg:border-yellow-500
+            xl:border-green-400
+            2xl:border-pink-500
+            xs:border-gray-500
+        */}
         {/* El flex crea un bloque con los espacios definidos por 
         el contenedro padre y los coloca uno debajo de otro y con row en una linea  */}
-        <div className="container mx-auto flex flex-row"> 
-          <div id="logo" className="flex-1">
+        <div className="container w-11/12 mx-auto flex md:flex-row xs:flex-col"> 
+          <div id="logo" className="md:flex-1 xs:mx-auto">
             <div className="
+              group
               w-64
               pt-0.5
               pb-0.5
@@ -32,7 +44,7 @@ const App = props => {
               hover:text-black 
               hover:bg-red-700
             ">
-              {/* Hover sirve cuando pasas el raton por ensima  */}
+              {/*` Hover sirve cuando pasas el raton por ensima  */}
                <span className="
                 symbol
                 block
@@ -40,6 +52,10 @@ const App = props => {
                 text-3xl
                 mt-1
                 ml-11
+                animate-spin-low
+                group-hover:animate-none
+                group-hover:animate-from-bellow
+
                ">S</span>
                <h3 className="
                 block
@@ -49,11 +65,13 @@ const App = props => {
                 mr-16
                 duration-100
                 bebas
+                group-hover:animate-none
+                group-hover:animate-from-rigth
                "> TAILWIND </h3>
             </div>
             
           </div>
-          <nav className = "flex 1">
+          <nav className = "flex-1">
             <ul className="menu-item">
               <li className ="menu-item__li">
                 <a href="#" className=" menu-item__li__a"> 

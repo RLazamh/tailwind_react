@@ -42,42 +42,29 @@
 }
 @layer components{
     .menu-item{
-        @apply flex flex-row h-20 text-2xl justify-end items-center bebas
+        @apply 
+        flex 
+        flex-row 
+        h-20 
+        text-2xl 
+        md:justify-end 
+        items-center 
+        bebas
+        md:mr-6
+        xs:mr-0
+        xs:text-center
     }
     .menu-item__li{
-        @apply mr-5 ml-5 tracking-wider flex-none
+        @apply 
+        mr-5 
+        ml-5 
+        tracking-wider 
+        flex-none
+        xs:flex-1
+        ;
     }
     .menu-item__li__a{
         @apply block transition duration-200 hover:text-azul-claro transform hover:scale-125
     }
-    /* .menu-item{
-        @apply( 
-            flex 
-            flex-row
-            h-20
-            text-2xl
-            justify-end
-            items-center
-            bebas
-        )
-    }
-    .menu-item__li{
-        @apply(
-            mr-5
-            ml-5
-            tracking-wider
-            flex-none
-        )
-    }
-    .menu-item__li__a{
-        @apply(
-            block
-            transaction
-            duration-200
-            hover:text-azul-claro
-            transform
-            hover:scale-125
-        )
-    } */
-
+   
 }
