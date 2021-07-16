@@ -1,4 +1,5 @@
 import React from 'react'
+import Banner from './Components/Banner'
 // import PropTypes from 'prop-types'
 
 const App = props => {
@@ -69,8 +70,7 @@ const App = props => {
                 group-hover:animate-from-rigth
                "> TAILWIND </h3>
             </div>
-            
-          </div>
+            </div>
           <nav className = "flex-1">
             <ul className="menu-item">
               <li className ="menu-item__li">
@@ -101,6 +101,7 @@ const App = props => {
       </header>
 
       {/* <h1 className="text-4xl bg-black text-white m-20 p-5 border-4 border-gray-300 rounded-full text-center">Hola Soy Goku</h1> */}
+      <Banner />
 
     </>
   )

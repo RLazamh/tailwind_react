@@ -9,8 +9,14 @@ module.exports = {
       },
       backgroundImage: theme => ({
         'body-pattern': "url('../assets/img/pattern.png')",
+        'banner': "url('../assets/img/bakbaner.png')"
+        
 
        }),
+
+       backgroundPosition: {
+        'banner-position': '-200px -200px'
+      },
 
        colors:{
         'azul-claro':'#4a69bd',
@@ -19,8 +25,9 @@ module.exports = {
        animation:{
          'spin-low':'spin 2s linear infinite',
          'from-bellow': 'fromBellow 500ms linear',
-         'from-rigth': 'fromRight 350ms linear'
-
+         'from-rigth': 'fromRight 350ms linear',
+         'bg-banner': 'fromBanner 10s linear',
+         'text-banner':'fromBannerText 10s linear'
 
        },
        keyframes:{
@@ -35,6 +42,36 @@ module.exports = {
           '100%': {transform: 'translateX(0%)'},
 
         },
+        fromBanner:{
+          '0%': {'background-position': '0px 0px'},
+          '100%': {'background-position': '-200px -200px'},
+        },
+        fromBannerText:{
+          '0%': {
+            transform: 'translateX(-600%) scale(5,5)',
+            opacity:1,            
+          },
+          '50%': {
+            transform: 'translateX(600%) scale(5,5)',
+            opacity:1,            
+          },
+          '75%': {
+            transform: 'translateX(-600%) scale(5,5)',
+            'text-shadow': 'none',
+            color: 'transparent',
+            opacity:0,
+
+          },
+          '100%': {
+            transform: 'translateX(0%) scale(1,1)',
+            'text-shadow': '2px 1px 1px black',
+            color: 'white',
+            opacity:1,
+            
+          },
+
+
+        },
 
        }
     },
@@ -42,6 +79,7 @@ module.exports = {
   variants: {
     animation: ['responsive', 'hover', 'group-hover'],       
     animate: ['responsive', 'hover', 'group-hover'] ,
+    backgroundPosition: ['hover', 'focus'],
     extend: {},
   },
   plugins: [],

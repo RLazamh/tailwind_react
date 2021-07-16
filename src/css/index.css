@@ -39,6 +39,7 @@
     .trebuchet{
         font-family: "TrebuchetMS";
     }
+   
 }
 @layer components{
     .menu-item{
@@ -66,5 +67,10 @@
     .menu-item__li__a{
         @apply block transition duration-200 hover:text-azul-claro transform hover:scale-125
     }
-   
+    .text-banner{
+        font-family:"BebasNeue";
+        /* Para realizar sombras */
+        text-shadow: 2px 2px 1px black;
+
+    }
 }
