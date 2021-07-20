@@ -1,5 +1,6 @@
 import React from 'react'
 import Banner from './Components/Banner'
+import Card from './Components/Card'
 // import PropTypes from 'prop-types'
 
 const App = props => {
@@ -102,6 +103,13 @@ const App = props => {
 
       {/* <h1 className="text-4xl bg-black text-white m-20 p-5 border-4 border-gray-300 rounded-full text-center">Hola Soy Goku</h1> */}
       <Banner />
+
+      {/* Inicio de Tarjetas  */}
+
+      <Card />
+
+      {/* FIn de Tarjetas  */}
+
 
     </>
   )
