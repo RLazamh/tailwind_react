@@ -27,7 +27,10 @@ module.exports = {
          'from-bellow': 'fromBellow 500ms linear',
          'from-rigth': 'fromRight 350ms linear',
          'bg-banner': 'fromBanner 10s linear',
-         'text-banner':'fromBannerText 10s linear'
+         'text-banner':'fromBannerText 10s linear',
+         'from-card-icon':'fromCardIcon 300ms linear',
+         'from-card-category':'fromCardCategory 300ms linear',
+         'from-card-description':'fromCardDescription 300ms linear',
 
        },
        keyframes:{
@@ -69,9 +72,24 @@ module.exports = {
             opacity:1,
             
           },
+        },
 
+        fromCardIcon:{
+          '0%': {transform: 'translateY(-200%)'},
+          '100%': {transform: 'translateY(0%)'},
+        },
+
+        fromCardCategory:{
+          '0%': {transform: 'translateY(-300%)'},
+          '100%': {transform: 'translateY(0%)'},
+        },
+
+        fromCardDescription:{
+          '0%': {transform: 'translateX(-200%)'},
+          '100%': {transform: 'translateX(0%)'},
 
         },
+
 
        }
     },
@@ -80,6 +98,11 @@ module.exports = {
     animation: ['responsive', 'hover', 'group-hover'],       
     animate: ['responsive', 'hover', 'group-hover'] ,
     backgroundPosition: ['hover', 'focus'],
+    fontSize: ['hover', 'responsive','group-hover'],
+    transform: ['hover', 'responsive','group-hover'],
+    scale: ['hover', 'responsive','group-hover'],
+    padding: ['hover', 'responsive','group-hover'],
+
     extend: {},
   },
   plugins: [],

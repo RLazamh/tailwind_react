@@ -76,6 +76,7 @@
     /* Estilos de tarjetas */
     .card{
         @apply 
+        group
         flex-1
         h-80
         border-2
@@ -90,18 +91,39 @@
         cursor-pointer
         transition
         duration-300
+        hover:bg-black
+        xs:h-40
+        xs:m-2
+        
+        md:h-40
+        md:m-2
+
+        lg:h-80
+        lg:m-5
+
     }
     .card-icon{
         font-family:"WebSymbolsRegular";
         @apply block
         w-full
         h-32
+        pt-5
         text-5xl
         text-center
         mt-12
         mx-auto
         transition
         duration-300
+
+        xs:h-20
+        xs:mt-5
+        
+        md:h-20
+        md:mt-5
+        
+        lg:mt-12
+        lg:h-32
+        
         ;
     }
     .card-category{
@@ -114,6 +136,32 @@
         text-azul-claro
         transition
         duration-300
+
+        xs:text-base
+        xs:h-6
+
+        md:text-base
+        md:h-6
+
+        lg:text-lg
+        lg:h-12
+
+
+    }
+    .card-description{
+        font-family: "TrebuchetMS";
+        @apply
+        block
+        text-center
+        text-azul-claro
+        text-base
+        transition
+        duration-300
+        xs:hidden
+        md:hidden
+        lg:block
+        lg:mt-1.5
+
 
     }
 }
