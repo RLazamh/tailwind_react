@@ -1,6 +1,7 @@
 import React from 'react'
 import Banner from './Components/Banner'
 import Card from './Components/Card'
+import MainContent from './Components/MainContent'
 // import PropTypes from 'prop-types'
 
 const App = props => {
@@ -110,10 +111,16 @@ const App = props => {
 
       {/* FIn de Tarjetas  */}
 
+      {/* Main */}
+      <MainContent />
+
+      
+
 
     </>
   )
 }
+
 
 // App.propTypes = {
 
