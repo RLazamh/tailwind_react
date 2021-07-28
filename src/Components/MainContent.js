@@ -8,6 +8,7 @@ const MainContent = props => {
         flex-row
         container w-11/12
         mx-auto
+        mt-4
         '>
             <aside id='slide' className='
             w-72
@@ -16,14 +17,14 @@ const MainContent = props => {
             flex-none
             order-2
             '>
-                <h3>Buscar</h3>
+                <h3 className=" aside-header ">Buscar</h3>
                 <div className='search
                 '>
                     <form>
                         <input type ='text'/>
                         <input type = 'button' value='Buscar'/>
                     </form>
-                    <h3>login</h3>
+                    <h3 className=" aside-header ">login</h3>
                     <form>
                         <label for='email'> Usuario </label>
                         <input type='email' id='email'></input>
@@ -39,7 +40,7 @@ const MainContent = props => {
                         
                     </form>
                 </div>
-                <h3>Redes Sociales</h3>
+                <h3 className=" aside-header ">Redes Sociales</h3>
                 <div id='social-medi'>
                     <div className='twitter'>
                         <a href='#'>Twitter</a>
@@ -56,7 +57,7 @@ const MainContent = props => {
                         <p>Youtube</p>
                     </div>
                 </div>
-                <h3>Patrocinadores</h3>
+                <h3 className=" aside-header ">Patrocinadores</h3>
                 <div id='sponsoirs'>
 
                 </div>
@@ -67,27 +68,101 @@ const MainContent = props => {
 
             {/* Inicio de articulos */}
             <section className='
-            mt-5
-            flex-grow
-            order-1
-            mr-10
+                flex-grow
+                order-1
+                mr-10
             '>
+                <h2 className='articles-header shadow-header3D'> Ultimos Articulos</h2>
 
-                <article>
-                    <div>
-                        <span>Fecha 10 marzo</span>
-                        <span>Categoria Pruebas</span>
+                <article className ="article-container">
+                    <div className=" article-date">
+                        <span className="m-2.5">Fecha 10 marzo</span>
+                        <span className="m-2.5">Categoria Pruebas</span>
                     </div>
+    
+                    <h4 className ="article-title">
+                        <a href='#'>Titulo del articulo</a>
+                    </h4>
 
+                    <p className="article-paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elit turpis, tempor eget enim eu, dignissim sodales mauris. Ut et tempor diam. Vestibulum ac scelerisque mauris 
+                    </p>
                 </article>
 
-                <h4>
-                    <a href='#'>Titulo del articulo</a>
-                </h4>
+                <article className ="article-container">
+                    <div className=" article-date">
+                        <span className="m-2.5">Fecha 10 marzo</span>
+                        <span className="m-2.5">Categoria Pruebas</span>
+                    </div>
+    
+                    <h4 className ="article-title">
+                        <a href='#'>Titulo del articulo</a>
+                    </h4>
 
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elit turpis, tempor eget enim eu, dignissim sodales mauris. Ut et tempor diam. Vestibulum ac scelerisque mauris 
-                </p>
+                    <p className="article-paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elit turpis, tempor eget enim eu, dignissim sodales mauris. Ut et tempor diam. Vestibulum ac scelerisque mauris 
+                    </p>
+                </article>
+
+                <article className ="article-container">
+                    <div className=" article-date">
+                        <span className="m-2.5">Fecha 10 marzo</span>
+                        <span className="m-2.5">Categoria Pruebas</span>
+                    </div>
+    
+                    <h4 className ="article-title">
+                        <a href='#'>Titulo del articulo</a>
+                    </h4>
+
+                    <p className="article-paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elit turpis, tempor eget enim eu, dignissim sodales mauris. Ut et tempor diam. Vestibulum ac scelerisque mauris 
+                    </p>
+                </article>
+
+                <article className ="article-container">
+                    <div className=" article-date">
+                        <span className="m-2.5">Fecha 10 marzo</span>
+                        <span className="m-2.5">Categoria Pruebas</span>
+                    </div>
+    
+                    <h4 className ="article-title">
+                        <a href='#'>Titulo del articulo</a>
+                    </h4>
+
+                    <p className="article-paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elit turpis, tempor eget enim eu, dignissim sodales mauris. Ut et tempor diam. Vestibulum ac scelerisque mauris 
+                    </p>
+                </article>
+
+                <article className ="article-container">
+                    <div className=" article-date">
+                        <span className="m-2.5">Fecha 10 marzo</span>
+                        <span className="m-2.5">Categoria Pruebas</span>
+                    </div>
+    
+                    <h4 className ="article-title">
+                        <a href='#'>Titulo del articulo</a>
+                    </h4>
+
+                    <p className="article-paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elit turpis, tempor eget enim eu, dignissim sodales mauris. Ut et tempor diam. Vestibulum ac scelerisque mauris 
+                    </p>
+                </article>
+
+                <article className ="article-container">
+                    <div className=" article-date">
+                        <span className="m-2.5">Fecha 10 marzo</span>
+                        <span className="m-2.5">Categoria Pruebas</span>
+                    </div>
+    
+                    <h4 className ="article-title">
+                        <a href='#'>Titulo del articulo</a>
+                    </h4>
+
+                    <p className="article-paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elit turpis, tempor eget enim eu, dignissim sodales mauris. Ut et tempor diam. Vestibulum ac scelerisque mauris 
+                    </p>
+                </article>
 
             </section>
 

@@ -161,7 +161,82 @@
         md:hidden
         lg:block
         lg:mt-1.5
-
-
     }
+    .articles-header{
+        font-family: "BebasNeue";
+        background: url('../assets/img/pxgray.png'), white;
+        @apply
+        block
+        bebas
+        text-4xl
+        text-center
+        tracking-widest
+        h-20
+        w-full
+        font-normal
+        pt-4
+        mt-4
+        border
+    }
+    .article-container{
+        @apply
+        w-full
+        h-auto
+        border
+        border-gray-200
+        m-10
+        p-2.5
+        mx-auto
+        text-black
+        shadow-md
+    }
+    .article-date{
+        @apply
+        float-right
+        bg-gray-800
+        text-white 
+        h-10
+        -m-2.5
+        text-sm
+        leading-7
+        rounded-bl-lg
+    }
+    .article-title{
+        @apply
+        block
+        text-2xl
+        m-1
+    }
+
+    .article-title a{
+        @apply text-azul-claro font-semibold hover:underline
+    }
+
+   .article-paragraph{
+       @apply
+       block
+       mt-3
+       mb-3
+       text-base
+       font-sans
+       font-normal
+       leading-normal
+   }
+    .aside-header{
+        font-family: "BebasNeue";
+        background: url('../assets/img/pxgray.png'), white;
+       @apply
+       block
+       h-11
+       text-2xl
+       mb-5
+       pt-1
+       pl-3.5
+       border
+       font-medium
+       leading-10
+       tracking-widest
+       shadow-header3D
+   }
+
 }
