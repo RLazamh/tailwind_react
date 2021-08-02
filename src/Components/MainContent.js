@@ -18,30 +18,30 @@ const MainContent = props => {
             order-2
             '>
                 <h3 className=" aside-header ">Buscar</h3>
-                <div className='search
-                '>
+                <div className='search aside-box'>
                     <form>
                         <input type ='text'/>
                         <input type = 'button' value='Buscar'/>
                     </form>
-                    <h3 className=" aside-header ">login</h3>
-                    <form>
-                        <label for='email'> Usuario </label>
-                        <input type='email' id='email'></input>
-
-                        <label for='password'> Password </label>
-                        <input type='password' id='password'></input>
-
-                        <input type='submit' value ='Entrar' />
-                        <input type='reset' value ='Limpiar' />
-
-                        <a href='#'>Registrate aqui</a>
-                        <a href='#'>Has olvidado tu password?</a>
-                        
-                    </form>
                 </div>
+                    <h3 className=" aside-header ">login</h3>
+                    <div id ="login" className ="aside-box">
+                        <form>
+                            <label for='email'> Usuario </label>
+                            <input type='email' id='email'></input>
+
+                            <label for='password'> Password </label>
+                            <input type='password' id='password'></input>
+
+                            <input type='submit' value ='Entrar' />
+                            <input type='reset' value ='Limpiar' />
+
+                            <a href='#'>Registrate aqui</a>
+                            <a href='#'>Has olvidado tu password?</a>
+                        </form>
+                    </div>
                 <h3 className=" aside-header ">Redes Sociales</h3>
-                <div id='social-medi'>
+                <div id='social-medi' className ="aside-box">
                     <div className='twitter'>
                         <a href='#'>Twitter</a>
                         <p>Twitter</p>
@@ -57,8 +57,8 @@ const MainContent = props => {
                         <p>Youtube</p>
                     </div>
                 </div>
-                <h3 className=" aside-header ">Patrocinadores</h3>
-                <div id='sponsoirs'>
+                <h3 className=" aside-header  ">Patrocinadores</h3>
+                <div id='sponsoirs' className="aside-box">
 
                 </div>
 
