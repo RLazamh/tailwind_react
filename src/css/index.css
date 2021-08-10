@@ -250,4 +250,63 @@
        shadow-box
        ;
    }
+   .input-box{
+        @apply
+            block
+            mx-auto
+            mt-5
+            w-10/12
+            h-8
+            border
+            border-gray-300
+            shadow-inner
+            rounded-md
+            text-gray-300
+            pl-7
+            transition
+            duration-300
+            focus:outline-none
+            focus:text-gray-300
+            outline-none
+        ;
+   }
+   .icon-item{
+       @apply
+        symbol
+        text-center
+        absolute
+        ml-7
+        mt-1
+        h-8
+   }
+   .button-bg{
+       @apply
+        trebuchet
+        w-24
+        h-8
+        mt-5
+        ml-5
+        mb-5
+        text-center
+        text-white
+        text-base
+        font-light
+        border
+        border-azul-claro
+        rounded-none
+        cursor-pointer
+        bg-gradient-to-b from-azul-claro to-azul-oscuro
+        shadow-md
+   }
+   .login-link{
+       @apply
+        block
+        ml-4
+        text-sm
+        text-gray-600
+        hover:underline
+        hover:text-azul-claro
+        cursor-pointer
+       ;
+   }
 }

@@ -18,26 +18,61 @@ const MainContent = props => {
             order-2
             '>
                 <h3 className=" aside-header ">Buscar</h3>
-                <div className='search aside-box'>
+                <div className='search
+                w-11/12
+                h-7
+                shadow-inner
+                m-2.5
+                mx-auto
+                border
+                border-gray-200
+                bg-white
+                rounded
+                '>
                     <form>
-                        <input type ='text'/>
-                        <input type = 'button' value='Buscar'/>
+                        <input className= 'w-10/12
+                        h-6
+                        border-none
+                        pl-1.5
+                        rounded-md
+                        bg-transparent
+                        text-gray-500
+                        transition
+                        duration-300
+                        outline-none
+                        focus:outline-none
+                        ' type ='text'/>
+                        <input type = 'button' value='L'
+                        className='symbol
+                        h-6
+                        cursor-pointer
+                        text-base
+                        bg-transparent
+                        border-none
+                        text-gray-500
+                        pl-2
+                        '/>
                     </form>
                 </div>
                     <h3 className=" aside-header ">login</h3>
                     <div id ="login" className ="aside-box">
                         <form>
-                            <label for='email'> Usuario </label>
-                            <input type='email' id='email'></input>
+                            <label for='email'
+                            className='icon-item'> U </label>
+                            <input type='email' id='email'
+                            className='input-box'
+                            ></input>
 
-                            <label for='password'> Password </label>
-                            <input type='password' id='password'></input>
+                            <label for='password' className='icon-item text-xl mt-6 '> w </label>
+                            <input type='password' id='password' className='input-box'></input>
 
-                            <input type='submit' value ='Entrar' />
-                            <input type='reset' value ='Limpiar' />
+                            <input type='submit' value ='Entrar' 
+                            className='button-bg'/>
+                            <input type='reset' value ='Limpiar' 
+                            className='button-bg ml-1'/>
 
-                            <a href='#'>Registrate aqui</a>
-                            <a href='#'>Has olvidado tu password?</a>
+                            <a href='#' className='login-link'>Registrate aqui</a>
+                            <a href='#' className='login-link mt-2'>Has olvidado tu password?</a>
                         </form>
                     </div>
                 <h3 className=" aside-header ">Redes Sociales</h3>
