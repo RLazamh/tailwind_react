@@ -309,4 +309,40 @@
         cursor-pointer
        ;
    }
+   .social-icon{
+       @apply
+        block
+        text-gray-700
+        symbol
+        text-3xl
+        mt-3
+        mb-5
+        ml-5
+        ;
+   }
+   .social-overlay{
+       @apply
+        block
+        absolute
+        h-10
+        ml-16
+        -mt-14
+        font-sans
+        font-bold
+        tracking-wide
+        pt-1
+        pl-2
+        pr-2
+        shadow-md
+        border-4
+        border-white
+        bg-gray-100
+
+        opacity-0
+        transition
+        duration-300
+        transform
+        -translate-x-3/4    
+        ;   
+   }
 }

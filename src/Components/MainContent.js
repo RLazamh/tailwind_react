@@ -77,20 +77,48 @@ const MainContent = props => {
                     </div>
                 <h3 className=" aside-header ">Redes Sociales</h3>
                 <div id='social-medi' className ="aside-box">
-                    <div className='twitter'>
-                        <a href='#'>Twitter</a>
-                        <p>Twitter</p>
+                    <div className='twitter group'>
+                        <a href='#' className='
+                            social-icon
+                        '>t</a>
+                        <p className = '
+                            social-overlay
+                            group-hover:opacity-100
+                            group-hover:transform
+                            group-hover:translate-x-1
+                        '>Twitter</p>
                     </div>
 
-                    <div className='facebook'>
-                        <a href='#'>Facebook</a>
-                        <p>Facebook</p>
+                    <div className='facebook group'>
+                        <a href='#' className='social-icon'>f</a>
+                        <p className='
+                            social-overlay
+                            group-hover:opacity-100
+                            group-hover:transform
+                            group-hover:translate-x-1
+                        '>Facebook</p>
                     </div>
 
-                    <div className='youtube'>
-                        <a href='#'>Youtube</a>
-                        <p>Youtube</p>
+                    <div className='youtube group'>
+                        <a href='#' className='social-icon'>y</a>
+                        <p className='
+                            social-overlay
+                            group-hover:opacity-100
+                            group-hover:transform
+                            group-hover:translate-x-1
+                        '>Youtube</p>
                     </div>
+
+                    <div className='github group'>
+                        <a href='#' className='social-icon'>l</a>
+                        <p className='
+                            social-overlay
+                            group-hover:opacity-100
+                            group-hover:transform
+                            group-hover:translate-x-1
+                        '>Linkedin</p>
+                    </div>
+
                 </div>
                 <h3 className=" aside-header  ">Patrocinadores</h3>
                 <div id='sponsoirs' className="aside-box">
