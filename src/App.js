@@ -1,6 +1,7 @@
 import React from 'react'
 import Banner from './Components/Banner'
 import Card from './Components/Card'
+import Footer from './Components/Footer'
 import MainContent from './Components/MainContent'
 // import PropTypes from 'prop-types'
 
@@ -113,6 +114,9 @@ const App = props => {
 
       {/* Main */}
       <MainContent />
+
+      {/* Pie de Pagina */}
+      <Footer />
 
       
 

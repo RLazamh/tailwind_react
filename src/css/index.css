@@ -241,6 +241,7 @@
    .aside-box{
        @apply
        w-10/12
+       max-w-xs
        h-60
        mx-auto
        mt-5
@@ -248,6 +249,7 @@
        pt-1
        bg-white
        shadow-box
+       xs:w-60
        ;
    }
    .input-box{
@@ -345,4 +347,58 @@
         -translate-x-3/4    
         ;   
    }
+   .footer-box{
+       @apply
+        trebuchet
+        flex-1
+        w-80
+        h-96
+        m-10
+        text-center
+        text-white
+       ;
+   }
+   .footer-header{
+        background: url('../assets/img/pxgray.png'), white;
+       @apply
+        bebas
+        tracking-wide
+        text-center
+        text-4xl
+        rounded-md
+        p-1.5
+        pt-2
+        mb-4
+        ;
+   }
+   .footer-menu{
+       @apply
+       text-left 
+       text-2xl 
+       m-5
+    ;
+
+   }
+   .footer-menu li{
+       @apply
+        mt-3
+        p-1
+        border-b-2
+        border-gray-400
+        transition
+        duration-300
+
+       ;
+   }
+   .footer-menu a{
+    @apply
+     block
+     h-10
+     transition
+     duration-300
+     text-azul-claro
+     hover:text-white
+    ;
+}
+                            
 }

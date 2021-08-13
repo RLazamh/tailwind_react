@@ -5,17 +5,20 @@ const MainContent = props => {
     return (
         <main className='
         flex
-        flex-row
+        md:flex-row
+        xs:flex-col
         container w-11/12
         mx-auto
         mt-4
         '>
             <aside id='slide' className='
-            w-72
+            md:w-72
             min-h-full
             mt-5
             flex-none
             order-2
+            xs:w-full
+            xs:m-0
             '>
                 <h3 className=" aside-header ">Buscar</h3>
                 <div className='search
@@ -131,9 +134,11 @@ const MainContent = props => {
 
             {/* Inicio de articulos */}
             <section className='
-                flex-grow
-                order-1
-                mr-10
+                md:flex-grow
+                md:order-1
+                md:mr-10
+                xs:w-full
+                xs:mr:0
             '>
                 <h2 className='articles-header shadow-header3D'> Ultimos Articulos</h2>
 
