@@ -351,11 +351,17 @@
        @apply
         trebuchet
         flex-1
-        w-80
         h-96
-        m-10
         text-center
         text-white
+        xs:w-11/12
+        xs:mx-auto
+        xs:mt-3
+        md:w-11/12
+        md:mx-auto
+        md:mt-3
+        lg:w-80
+        lg:m-10
        ;
    }
    .footer-header{
@@ -399,6 +405,16 @@
      text-azul-claro
      hover:text-white
     ;
-}
+    }
+
+    .browsers a{
+        @apply
+        flex-1
+        mb-1.5
+    }
+    .browsers a img{
+        @apply
+        w-11
+    }
                             
 }
